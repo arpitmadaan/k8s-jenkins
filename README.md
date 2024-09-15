@@ -28,9 +28,9 @@ Here, we are using the type as 'NodePort' which will expose Jenkins on all kuber
 kubectl apply -f service.yaml
 
 Now, when browsing to any one of the Node IPs on port 32000, you will be able to access the Jenkins dashboard.
-
+```console
 http://<node-ip>:32000
-
+```
 Jenkins will ask for the initial Admin password when you access the dashboard for the first time.
 
 You can get that from the pod logs.
